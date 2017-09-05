@@ -1,5 +1,5 @@
 //
-//  GeneralBalanceView.swift
+//  GeneralBalanceCollectionViewCell.swift
 //  Economizzer-iOS
 //
 //  Created by Guilherme Souza on 04/09/17.
@@ -7,35 +7,8 @@
 //
 
 import UIKit
-import IGListKit
 
-final class GeneralBalanceViewModel: ListDiffable {
-
-    let greeting: String
-    let balance: Double
-    let graphData: [CGFloat]
-
-    init(greeting: String, balance: Double, graphData: [CGFloat]) {
-        self.greeting = greeting
-        self.balance = balance
-        self.graphData = graphData
-    }
-
-    func diffIdentifier() -> NSObjectProtocol {
-        return balance as NSObjectProtocol
-    }
-
-    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        if let object = object as? GeneralBalanceViewModel {
-            return self.balance == object.balance
-                && self.greeting == object.greeting
-                && self.graphData == object.graphData
-        }
-        return false
-    }
-}
-
-final class GeneralBalanceView: UIView {
+final class GeneralBalanceCollectionViewCell: UICollectionViewCell {
 
     fileprivate lazy var greetingLabel: UILabel = {
         let label = UILabel()
@@ -60,6 +33,12 @@ final class GeneralBalanceView: UIView {
         label.textColor = UIColor.white.withAlphaComponent(0.8)
         return label
     }()
+
+    var viewModel: GeneralBalanceViewModel? {
+        didSet {
+            updateLayout()
+        }
+    }
 
     fileprivate var data: [CGFloat] = [] {
         didSet {
@@ -107,17 +86,28 @@ final class GeneralBalanceView: UIView {
         path.fill()
     }
 
+    private func updateLayout() {
+        guard let viewModel = viewModel else {
+            return
+        }
+
+        greetingLabel.text = viewModel.greeting
+        balanceLabel.text = "$ \(viewModel.balance)"
+        data = viewModel.graphData
+    }
+
     private func updateGraph() {
         setNeedsLayout()
         layoutIfNeeded()
     }
+
 }
 
-extension GeneralBalanceView: ViewConfigurator {
+extension GeneralBalanceCollectionViewCell: ViewConfigurator {
     func buildViewHierarchy() {
-        addSubview(greetingLabel)
-        addSubview(balanceLabel)
-        addSubview(generalBalanceLabel)
+        contentView.addSubview(greetingLabel)
+        contentView.addSubview(balanceLabel)
+        contentView.addSubview(generalBalanceLabel)
     }
 
     func setupConstraints() {

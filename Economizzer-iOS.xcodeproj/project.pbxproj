@@ -16,6 +16,8 @@
 		18F1F7451F5E3286009834A5 /* ViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */; };
 		18F1F7471F5E33E5009834A5 /* GeneralBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7461F5E33E5009834A5 /* GeneralBalanceView.swift */; };
 		18F1F7491F5E3702009834A5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7481F5E3702009834A5 /* UIColor.swift */; };
+		18F1F74B1F5E475F009834A5 /* GeneralBalanceSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */; };
+		18F1F74D1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */; };
 		24B09FF675588E9ECB732111 /* Pods_Economizzer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD882EE3CDE36BD617707B31 /* Pods_Economizzer_iOS.framework */; };
 		B8644881BA30A8A7F9442CC9 /* Pods_Economizzer_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9BA8111B6D41B6B876D872 /* Pods_Economizzer_iOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurator.swift; sourceTree = "<group>"; };
 		18F1F7461F5E33E5009834A5 /* GeneralBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceView.swift; sourceTree = "<group>"; };
 		18F1F7481F5E3702009834A5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceSectionController.swift; sourceTree = "<group>"; };
+		18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A88E95BC30FE12FE951C1BF /* Pods-Economizzer-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Economizzer-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Economizzer-iOSTests/Pods-Economizzer-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D9BA8111B6D41B6B876D872 /* Pods_Economizzer_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Economizzer_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E635F61045062490E34AAA /* Pods-Economizzer-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Economizzer-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Economizzer-iOS/Pods-Economizzer-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */,
 				18F1F7461F5E33E5009834A5 /* GeneralBalanceView.swift */,
 				18F1F7481F5E3702009834A5 /* UIColor.swift */,
+				18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */,
+				18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */,
 			);
 			path = "Economizzer-iOS";
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 				18F1F7491F5E3702009834A5 /* UIColor.swift in Sources */,
 				18D1EB221F5E307600F4291E /* MainTabBarController.swift in Sources */,
 				18D1EB021F5E2FB900F4291E /* AppDelegate.swift in Sources */,
+				18F1F74D1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift in Sources */,
 				18F1F7451F5E3286009834A5 /* ViewConfigurator.swift in Sources */,
 				18F1F7471F5E33E5009834A5 /* GeneralBalanceView.swift in Sources */,
+				18F1F74B1F5E475F009834A5 /* GeneralBalanceSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
