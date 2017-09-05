@@ -13,8 +13,11 @@
 		18D1EB171F5E2FB900F4291E /* Economizzer_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1EB161F5E2FB900F4291E /* Economizzer_iOSTests.swift */; };
 		18D1EB221F5E307600F4291E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1EB211F5E307600F4291E /* MainTabBarController.swift */; };
 		18D1EB241F5E31AD00F4291E /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1EB231F5E31AD00F4291E /* GeneralViewController.swift */; };
+		18E4DE7B1F5EB7030097D304 /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4DE7A1F5EB7030097D304 /* AccountCollectionViewCell.swift */; };
+		18E4DE7D1F5EB9530097D304 /* AccountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4DE7C1F5EB9530097D304 /* AccountCellViewModel.swift */; };
+		18E4DE7F1F5EBDC00097D304 /* GeneralSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4DE7E1F5EBDC00097D304 /* GeneralSectionHeaderView.swift */; };
 		18F1F7451F5E3286009834A5 /* ViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */; };
-		18F1F7471F5E33E5009834A5 /* GeneralBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7461F5E33E5009834A5 /* GeneralBalanceView.swift */; };
+		18F1F7471F5E33E5009834A5 /* GeneralBalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7461F5E33E5009834A5 /* GeneralBalanceViewModel.swift */; };
 		18F1F7491F5E3702009834A5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7481F5E3702009834A5 /* UIColor.swift */; };
 		18F1F74B1F5E475F009834A5 /* GeneralBalanceSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */; };
 		18F1F74D1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */; };
@@ -43,8 +46,11 @@
 		18D1EB181F5E2FB900F4291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D1EB211F5E307600F4291E /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		18D1EB231F5E31AD00F4291E /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		18E4DE7A1F5EB7030097D304 /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
+		18E4DE7C1F5EB9530097D304 /* AccountCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCellViewModel.swift; sourceTree = "<group>"; };
+		18E4DE7E1F5EBDC00097D304 /* GeneralSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSectionHeaderView.swift; sourceTree = "<group>"; };
 		18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurator.swift; sourceTree = "<group>"; };
-		18F1F7461F5E33E5009834A5 /* GeneralBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceView.swift; sourceTree = "<group>"; };
+		18F1F7461F5E33E5009834A5 /* GeneralBalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceViewModel.swift; sourceTree = "<group>"; };
 		18F1F7481F5E3702009834A5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceSectionController.swift; sourceTree = "<group>"; };
 		18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -106,10 +112,13 @@
 				18D1EB211F5E307600F4291E /* MainTabBarController.swift */,
 				18D1EB231F5E31AD00F4291E /* GeneralViewController.swift */,
 				18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */,
-				18F1F7461F5E33E5009834A5 /* GeneralBalanceView.swift */,
+				18F1F7461F5E33E5009834A5 /* GeneralBalanceViewModel.swift */,
 				18F1F7481F5E3702009834A5 /* UIColor.swift */,
 				18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */,
 				18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */,
+				18E4DE7A1F5EB7030097D304 /* AccountCollectionViewCell.swift */,
+				18E4DE7C1F5EB9530097D304 /* AccountCellViewModel.swift */,
+				18E4DE7E1F5EBDC00097D304 /* GeneralSectionHeaderView.swift */,
 			);
 			path = "Economizzer-iOS";
 			sourceTree = "<group>";
@@ -346,13 +355,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E4DE7F1F5EBDC00097D304 /* GeneralSectionHeaderView.swift in Sources */,
 				18D1EB241F5E31AD00F4291E /* GeneralViewController.swift in Sources */,
 				18F1F7491F5E3702009834A5 /* UIColor.swift in Sources */,
+				18E4DE7B1F5EB7030097D304 /* AccountCollectionViewCell.swift in Sources */,
 				18D1EB221F5E307600F4291E /* MainTabBarController.swift in Sources */,
 				18D1EB021F5E2FB900F4291E /* AppDelegate.swift in Sources */,
 				18F1F74D1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift in Sources */,
+				18E4DE7D1F5EB9530097D304 /* AccountCellViewModel.swift in Sources */,
 				18F1F7451F5E3286009834A5 /* ViewConfigurator.swift in Sources */,
-				18F1F7471F5E33E5009834A5 /* GeneralBalanceView.swift in Sources */,
+				18F1F7471F5E33E5009834A5 /* GeneralBalanceViewModel.swift in Sources */,
 				18F1F74B1F5E475F009834A5 /* GeneralBalanceSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
