@@ -55,7 +55,9 @@ final class GeneralViewController: UIViewController {
         dataSource.append(.accounts([AccountCellViewModel(accountName: "Itaú", categoryName: "Conta Corrente", iconImage: UIImage(), balance: 234.53),
                                      AccountCellViewModel(accountName: "Banco do Brasil", categoryName: "Conta Corrente", iconImage: UIImage(), balance: 65.53),
                                      AccountCellViewModel(accountName: "Carteira", categoryName: "Outros", iconImage: UIImage(), balance: 234.53)]))
-        dataSource.append(.creditCard([CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56),CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56),CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56)]))
+        dataSource.append(.creditCard([CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56),
+                                       CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56),
+                                       CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56)]))
     }
 
     override func loadView() {
@@ -65,7 +67,9 @@ final class GeneralViewController: UIViewController {
     }
 
     @objc fileprivate func addButtonTapped(_ sender: UIBarButtonItem) {
-        navigationController?.pushViewController(AddMoveViewController(), animated: true)
+        let addMoveViewController = AddMoveViewController()
+        let navController = UINavigationController(rootViewController: addMoveViewController)
+        present(navController, animated: true)
     }
 
     fileprivate func generalBalanceTapped() {
