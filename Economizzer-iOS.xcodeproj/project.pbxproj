@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184375B01F5F048B00B89A7B /* AddMoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184375AF1F5F048B00B89A7B /* AddMoveViewController.swift */; };
+		184375B01F5F048B00B89A7B /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184375AF1F5F048B00B89A7B /* AddTransactionViewController.swift */; };
 		18C9E1041F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9E1031F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift */; };
 		18C9E1061F5EFF61001BB379 /* CreditCardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9E1051F5EFF61001BB379 /* CreditCardCellViewModel.swift */; };
 		18D1EB021F5E2FB900F4291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1EB011F5E2FB900F4291E /* AppDelegate.swift */; };
@@ -22,7 +22,6 @@
 		18F1F7451F5E3286009834A5 /* ViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */; };
 		18F1F7471F5E33E5009834A5 /* GeneralBalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7461F5E33E5009834A5 /* GeneralBalanceViewModel.swift */; };
 		18F1F7491F5E3702009834A5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F7481F5E3702009834A5 /* UIColor.swift */; };
-		18F1F74B1F5E475F009834A5 /* GeneralBalanceSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */; };
 		18F1F74D1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */; };
 		24B09FF675588E9ECB732111 /* Pods_Economizzer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD882EE3CDE36BD617707B31 /* Pods_Economizzer_iOS.framework */; };
 		B8644881BA30A8A7F9442CC9 /* Pods_Economizzer_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9BA8111B6D41B6B876D872 /* Pods_Economizzer_iOSTests.framework */; };
@@ -39,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		184375AF1F5F048B00B89A7B /* AddMoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoveViewController.swift; sourceTree = "<group>"; };
+		184375AF1F5F048B00B89A7B /* AddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		18C9E1031F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		18C9E1051F5EFF61001BB379 /* CreditCardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCellViewModel.swift; sourceTree = "<group>"; };
 		18D1EAFE1F5E2FB800F4291E /* Economizzer-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Economizzer-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +57,6 @@
 		18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurator.swift; sourceTree = "<group>"; };
 		18F1F7461F5E33E5009834A5 /* GeneralBalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceViewModel.swift; sourceTree = "<group>"; };
 		18F1F7481F5E3702009834A5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceSectionController.swift; sourceTree = "<group>"; };
 		18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBalanceCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A88E95BC30FE12FE951C1BF /* Pods-Economizzer-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Economizzer-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Economizzer-iOSTests/Pods-Economizzer-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D9BA8111B6D41B6B876D872 /* Pods_Economizzer_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Economizzer_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +86,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18C2DEF21F5F4CA9004456A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18F1F7481F5E3702009834A5 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18C2DEF31F5F4CBB004456A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				184375AF1F5F048B00B89A7B /* AddTransactionViewController.swift */,
+				18D1EB231F5E31AD00F4291E /* GeneralViewController.swift */,
+				18D1EB211F5E307600F4291E /* MainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18C2DEF41F5F4CCB004456A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18E4DE7A1F5EB7030097D304 /* AccountCollectionViewCell.swift */,
+				18C9E1031F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift */,
+				18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */,
+				18E4DE7E1F5EBDC00097D304 /* GeneralSectionHeaderView.swift */,
+				18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18C2DEF51F5F4CD6004456A9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				18E4DE7C1F5EB9530097D304 /* AccountCellViewModel.swift */,
+				18C9E1051F5EFF61001BB379 /* CreditCardCellViewModel.swift */,
+				18F1F7461F5E33E5009834A5 /* GeneralBalanceViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		18C2DEF61F5F4CDF004456A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18D1EB081F5E2FB900F4291E /* Assets.xcassets */,
+				18D1EB0D1F5E2FB900F4291E /* Info.plist */,
+				18D1EB0A1F5E2FB900F4291E /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		18D1EAF51F5E2FB800F4291E = {
 			isa = PBXGroup;
 			children = (
@@ -112,22 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				18D1EB011F5E2FB900F4291E /* AppDelegate.swift */,
-				18D1EB081F5E2FB900F4291E /* Assets.xcassets */,
-				18D1EB0A1F5E2FB900F4291E /* LaunchScreen.storyboard */,
-				18D1EB0D1F5E2FB900F4291E /* Info.plist */,
-				18D1EB211F5E307600F4291E /* MainTabBarController.swift */,
-				18D1EB231F5E31AD00F4291E /* GeneralViewController.swift */,
-				18F1F7441F5E3286009834A5 /* ViewConfigurator.swift */,
-				18F1F7461F5E33E5009834A5 /* GeneralBalanceViewModel.swift */,
-				18F1F7481F5E3702009834A5 /* UIColor.swift */,
-				18F1F74A1F5E475F009834A5 /* GeneralBalanceSectionController.swift */,
-				18F1F74C1F5E47A9009834A5 /* GeneralBalanceCollectionViewCell.swift */,
-				18E4DE7A1F5EB7030097D304 /* AccountCollectionViewCell.swift */,
-				18E4DE7C1F5EB9530097D304 /* AccountCellViewModel.swift */,
-				18E4DE7E1F5EBDC00097D304 /* GeneralSectionHeaderView.swift */,
-				18C9E1031F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift */,
-				18C9E1051F5EFF61001BB379 /* CreditCardCellViewModel.swift */,
-				184375AF1F5F048B00B89A7B /* AddMoveViewController.swift */,
+				18C2DEF31F5F4CBB004456A9 /* Controllers */,
+				18C2DEF21F5F4CA9004456A9 /* Extensions */,
+				18C2DEF61F5F4CDF004456A9 /* Support Files */,
+				18C2DEF51F5F4CD6004456A9 /* ViewModels */,
+				18C2DEF41F5F4CCB004456A9 /* Views */,
 			);
 			path = "Economizzer-iOS";
 			sourceTree = "<group>";
@@ -375,9 +412,8 @@
 				18E4DE7D1F5EB9530097D304 /* AccountCellViewModel.swift in Sources */,
 				18C9E1061F5EFF61001BB379 /* CreditCardCellViewModel.swift in Sources */,
 				18F1F7451F5E3286009834A5 /* ViewConfigurator.swift in Sources */,
-				184375B01F5F048B00B89A7B /* AddMoveViewController.swift in Sources */,
+				184375B01F5F048B00B89A7B /* AddTransactionViewController.swift in Sources */,
 				18F1F7471F5E33E5009834A5 /* GeneralBalanceViewModel.swift in Sources */,
-				18F1F74B1F5E475F009834A5 /* GeneralBalanceSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

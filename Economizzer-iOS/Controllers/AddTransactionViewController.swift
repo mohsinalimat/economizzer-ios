@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class AddMoveViewController: UIViewController {
+final class AddTransactionViewController: UIViewController {
 
     enum State: Int {
         case income
@@ -85,7 +85,7 @@ final class AddMoveViewController: UIViewController {
 
 }
 
-extension AddMoveViewController: ViewConfigurator {
+extension AddTransactionViewController: ViewConfigurator {
     func buildViewHierarchy() {
         view.addSubview(headerBackgroundView)
         headerBackgroundView.addSubview(moveTypeSegmentedControl)

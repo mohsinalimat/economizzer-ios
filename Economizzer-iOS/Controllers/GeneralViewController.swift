@@ -67,7 +67,7 @@ final class GeneralViewController: UIViewController {
     }
 
     @objc fileprivate func addButtonTapped(_ sender: UIBarButtonItem) {
-        let addMoveViewController = AddMoveViewController()
+        let addMoveViewController = AddTransactionViewController()
         let navController = UINavigationController(rootViewController: addMoveViewController)
         present(navController, animated: true)
     }
