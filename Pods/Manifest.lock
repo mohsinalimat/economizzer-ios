@@ -1,0 +1,29 @@
+PODS:
+  - IGListKit (3.0.0):
+    - IGListKit/Default (= 3.0.0)
+  - IGListKit/Default (3.0.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.0.0)
+  - ReactiveCocoa (6.0.0):
+    - ReactiveSwift (~> 2.0)
+  - ReactiveSwift (2.0.0):
+    - Result (~> 3.2)
+  - Result (3.2.3)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - IGListKit
+  - ReactiveCocoa
+  - ReactiveSwift
+  - SnapKit
+
+SPEC CHECKSUMS:
+  IGListKit: 9eab6856a15fa25ad72018ff9d9eb2178c240fff
+  ReactiveCocoa: ca689e37b6a922f0273918220d735c43368de550
+  ReactiveSwift: 36339167e571774d936482d0f6512f5118a74731
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: 07a4cf55d1d81897099baa9a6638bfb982b42e7c
+
+COCOAPODS: 1.2.1

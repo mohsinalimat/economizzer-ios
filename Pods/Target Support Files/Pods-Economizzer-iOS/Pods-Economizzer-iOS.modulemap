@@ -1,0 +1,6 @@
+framework module Pods_Economizzer_iOS {
+  umbrella header "Pods-Economizzer-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
