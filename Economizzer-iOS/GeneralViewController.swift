@@ -64,7 +64,9 @@ final class GeneralViewController: UIViewController {
         setupView()
     }
 
-    @objc fileprivate func addButtonTapped(_ sender: UIBarButtonItem) {}
+    @objc fileprivate func addButtonTapped(_ sender: UIBarButtonItem) {
+        navigationController?.pushViewController(AddMoveViewController(), animated: true)
+    }
 
     fileprivate func generalBalanceTapped() {
         navigationController?.pushViewController(UIViewController(), animated: true)

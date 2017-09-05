@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184375B01F5F048B00B89A7B /* AddMoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184375AF1F5F048B00B89A7B /* AddMoveViewController.swift */; };
 		18C9E1041F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9E1031F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift */; };
 		18C9E1061F5EFF61001BB379 /* CreditCardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9E1051F5EFF61001BB379 /* CreditCardCellViewModel.swift */; };
 		18D1EB021F5E2FB900F4291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1EB011F5E2FB900F4291E /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184375AF1F5F048B00B89A7B /* AddMoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoveViewController.swift; sourceTree = "<group>"; };
 		18C9E1031F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		18C9E1051F5EFF61001BB379 /* CreditCardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCellViewModel.swift; sourceTree = "<group>"; };
 		18D1EAFE1F5E2FB800F4291E /* Economizzer-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Economizzer-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				18E4DE7E1F5EBDC00097D304 /* GeneralSectionHeaderView.swift */,
 				18C9E1031F5EFF4E001BB379 /* CreditCardCollectionViewCell.swift */,
 				18C9E1051F5EFF61001BB379 /* CreditCardCellViewModel.swift */,
+				184375AF1F5F048B00B89A7B /* AddMoveViewController.swift */,
 			);
 			path = "Economizzer-iOS";
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				18E4DE7D1F5EB9530097D304 /* AccountCellViewModel.swift in Sources */,
 				18C9E1061F5EFF61001BB379 /* CreditCardCellViewModel.swift in Sources */,
 				18F1F7451F5E3286009834A5 /* ViewConfigurator.swift in Sources */,
+				184375B01F5F048B00B89A7B /* AddMoveViewController.swift in Sources */,
 				18F1F7471F5E33E5009834A5 /* GeneralBalanceViewModel.swift in Sources */,
 				18F1F74B1F5E475F009834A5 /* GeneralBalanceSectionController.swift in Sources */,
 			);
