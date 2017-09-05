@@ -1,5 +1,5 @@
 //
-//  AccountCellViewModel.swift
+//  CreditCardCellViewModel.swift
 //  Economizzer-iOS
 //
 //  Created by Guilherme Souza on 05/09/17.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-struct AccountCellViewModel {
-    let accountName: String
-    let categoryName: String
+struct CreditCardCellViewModel {
+    let cardName: String
     let iconImage: UIImage
-    let balance: Double
+    let invoiceValue: Double
+    let limitValue: Double
 }

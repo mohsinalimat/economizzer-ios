@@ -13,7 +13,6 @@ final class GeneralBalanceCollectionViewCell: UICollectionViewCell {
 
     fileprivate lazy var greetingLabel: UILabel = {
         let label = UILabel()
-        label.text = "Good night, Guilherme Souza!"
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = .white
         return label
@@ -21,7 +20,6 @@ final class GeneralBalanceCollectionViewCell: UICollectionViewCell {
 
     fileprivate lazy var balanceLabel: UILabel = {
         let label = UILabel()
-        label.text = "$ 408.06"
         label.font = UIFont.boldSystemFont(ofSize: 32)
         label.textColor = .white
         return label
@@ -29,7 +27,7 @@ final class GeneralBalanceCollectionViewCell: UICollectionViewCell {
 
     fileprivate lazy var generalBalanceLabel: UILabel = {
         let label = UILabel()
-        label.text = "general balance"
+        label.text = "saldo geral"
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = UIColor.white.withAlphaComponent(0.8)
         return label
@@ -93,7 +91,7 @@ final class GeneralBalanceCollectionViewCell: UICollectionViewCell {
         }
 
         greetingLabel.text = viewModel.greeting
-        balanceLabel.text = "$ \(viewModel.balance)"
+        balanceLabel.text = "R$ \(viewModel.balance)"
         data = viewModel.graphData
     }
 

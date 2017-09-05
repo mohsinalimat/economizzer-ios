@@ -13,13 +13,14 @@ final class GeneralViewController: UIViewController {
     enum CollectionItem {
         case generalBalance(GeneralBalanceViewModel)
         case accounts([AccountCellViewModel])
-        case creditCard([AccountCellViewModel])
+        case creditCard([CreditCardCellViewModel])
     }
 
     enum Constants {
         static let generalBalanceCellIdentifier = "GeneralBalanceCollectionViewCell"
         static let accountCellIdentifier = "AccountCollectionViewCell"
         static let sectionHeaderIdentifier = "GeneralSectionHeaderView"
+        static let creditCardCellIdentifier = "CreditCardCollectionViewCell"
     }
 
     fileprivate lazy var collectionView: UICollectionView = {
@@ -42,18 +43,19 @@ final class GeneralViewController: UIViewController {
                                 forCellWithReuseIdentifier: Constants.generalBalanceCellIdentifier)
         collectionView.register(AccountCollectionViewCell.self,
                                 forCellWithReuseIdentifier: Constants.accountCellIdentifier)
+        collectionView.register(CreditCardCollectionViewCell.self,
+                                forCellWithReuseIdentifier: Constants.creditCardCellIdentifier)
         collectionView.register(GeneralSectionHeaderView.self,
                                 forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
                                 withReuseIdentifier: Constants.sectionHeaderIdentifier)
         collectionView.dataSource = self
         collectionView.delegate = self
 
-        dataSource.append(.generalBalance(GeneralBalanceViewModel(greeting: "Good morning, Guilherme!", balance: 456.23, graphData: [])))
-        dataSource.append(.accounts([AccountCellViewModel(accountName: "Itaú", iconImage: UIImage()),
-                                     AccountCellViewModel(accountName: "Banco do Brasil", iconImage: UIImage()),
-                                     AccountCellViewModel(accountName: "Carteira", iconImage: UIImage())]))
-        dataSource.append(.creditCard([AccountCellViewModel(accountName: "Nubank", iconImage: UIImage()),
-                                     AccountCellViewModel(accountName: "Ourocard", iconImage: UIImage())]))
+        dataSource.append(.generalBalance(GeneralBalanceViewModel(greeting: "Bom dia, Guilherme!", balance: 456.23, graphData: [])))
+        dataSource.append(.accounts([AccountCellViewModel(accountName: "Itaú", categoryName: "Conta Corrente", iconImage: UIImage(), balance: 234.53),
+                                     AccountCellViewModel(accountName: "Banco do Brasil", categoryName: "Conta Corrente", iconImage: UIImage(), balance: 65.53),
+                                     AccountCellViewModel(accountName: "Carteira", categoryName: "Outros", iconImage: UIImage(), balance: 234.53)]))
+        dataSource.append(.creditCard([CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56),CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56),CreditCardCellViewModel(cardName: "Nubank", iconImage: UIImage(), invoiceValue: -321.45, limitValue: 1234.56)]))
     }
 
     override func loadView() {
@@ -102,8 +104,8 @@ extension GeneralViewController: UICollectionViewDataSource {
             return cell
 
         case .creditCard(let cards):
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.accountCellIdentifier,
-                                                          for: indexPath) as! AccountCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.creditCardCellIdentifier,
+                                                          for: indexPath) as! CreditCardCollectionViewCell
             cell.viewModel = cards[indexPath.item]
             cell.isSeparatorHidden = indexPath.item == (cards.count - 1)
             return cell
@@ -120,9 +122,9 @@ extension GeneralViewController: UICollectionViewDataSource {
         let item = dataSource[indexPath.section]
         switch item {
         case .accounts:
-            view.title = "Accounts"
+            view.title = "Contas"
         case .creditCard:
-            view.title = "Credit Cards"
+            view.title = "Cartões de Crédito"
         default:
             break
         }

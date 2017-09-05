@@ -1,5 +1,6 @@
+
 //
-//  AccountCollectionViewCell.swift
+//  CreditCardCollectionViewCell.swift
 //  Economizzer-iOS
 //
 //  Created by Guilherme Souza on 05/09/17.
@@ -8,7 +9,7 @@
 
 import UIKit
 
-final class AccountCollectionViewCell: UICollectionViewCell {
+final class CreditCardCollectionViewCell: UICollectionViewCell {
 
     fileprivate lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
@@ -25,17 +26,17 @@ final class AccountCollectionViewCell: UICollectionViewCell {
         return label
     }()
 
-    fileprivate lazy var categoryLabel: UILabel = {
+    fileprivate lazy var invoiceValueLabel: UILabel = {
         let label = UILabel()
         label.textColor = .lightGray
         label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
 
-    fileprivate lazy var balanceLabel: UILabel = {
+    fileprivate lazy var limitValueLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(r: 30, g: 189, b: 200)
-        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.textColor = .lightGray
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
 
@@ -51,13 +52,13 @@ final class AccountCollectionViewCell: UICollectionViewCell {
         }
     }
 
-    var viewModel: AccountCellViewModel? {
+    var viewModel: CreditCardCellViewModel? {
         didSet {
             guard let viewModel = viewModel else { return }
             iconImageView.image = viewModel.iconImage
-            nameLabel.text = viewModel.accountName
-            categoryLabel.text = viewModel.categoryName
-            balanceLabel.text = "$ \(viewModel.balance)"
+            nameLabel.text = viewModel.cardName
+            invoiceValueLabel.text = "Fatura R$ \(viewModel.invoiceValue)"
+            limitValueLabel.text = "Limite R$ \(viewModel.limitValue)"
         }
     }
 
@@ -71,12 +72,12 @@ final class AccountCollectionViewCell: UICollectionViewCell {
     }
 }
 
-extension AccountCollectionViewCell: ViewConfigurator {
+extension CreditCardCollectionViewCell: ViewConfigurator {
     func buildViewHierarchy() {
         addSubview(iconImageView)
         addSubview(nameLabel)
-        addSubview(categoryLabel)
-        addSubview(balanceLabel)
+        addSubview(invoiceValueLabel)
+        addSubview(limitValueLabel)
         addSubview(separatorView)
     }
 
@@ -89,29 +90,27 @@ extension AccountCollectionViewCell: ViewConfigurator {
         }
 
         nameLabel.snp.makeConstraints { (make) in
-            make.bottom.equalTo(iconImageView.snp.centerY)
+            make.centerY.equalTo(iconImageView)
             make.left.equalTo(iconImageView.snp.right).offset(12)
         }
 
-        categoryLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(iconImageView.snp.centerY)
-            make.left.equalTo(nameLabel)
-        }
-
-        balanceLabel.snp.makeConstraints { (make) in
-            make.centerY.equalToSuperview()
+        invoiceValueLabel.snp.makeConstraints { (make) in
+            make.bottom.equalTo(snp.centerY)
             make.right.equalToSuperview().offset(-24)
+    }
+
+        limitValueLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(snp.centerY)
+            make.right.equalTo(invoiceValueLabel)
         }
 
         separatorView.snp.makeConstraints { (make) in
             make.height.equalTo(1)
             make.bottom.equalToSuperview()
             make.left.equalTo(iconImageView).offset(-4)
-            make.right.equalTo(balanceLabel).offset(4)
+            make.right.equalTo(invoiceValueLabel).offset(4)
         }
     }
 
-    func configureView() {
-//        backgroundColor = .blue
-    }
+    func configureView() {}
 }
