@@ -51,7 +51,9 @@ final class GeneralViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
 
-        dataSource.append(.generalBalance(GeneralBalanceViewModel(greeting: "Bom dia, Guilherme!", balance: 456.23, graphData: [])))
+        let graphData = (0...10).map { _ in CGFloat(arc4random_uniform(20)) }
+
+        dataSource.append(.generalBalance(GeneralBalanceViewModel(greeting: "Bom dia, Guilherme!", balance: 456.23, graphData: graphData)))
         dataSource.append(.accounts([AccountCellViewModel(accountName: "Itaú", categoryName: "Conta Corrente", iconImage: UIImage(), balance: 234.53),
                                      AccountCellViewModel(accountName: "Banco do Brasil", categoryName: "Conta Corrente", iconImage: UIImage(), balance: 65.53),
                                      AccountCellViewModel(accountName: "Carteira", categoryName: "Outros", iconImage: UIImage(), balance: 234.53)]))

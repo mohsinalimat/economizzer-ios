@@ -48,8 +48,6 @@ final class GeneralBalanceCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
-
-        data = (0...10).map { _ in CGFloat(arc4random_uniform(20)) }
     }
 
     required init?(coder aDecoder: NSCoder) {
